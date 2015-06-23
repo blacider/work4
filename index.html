@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>云报销</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="http://www.cloudbaoxiao.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+  <div class="contain">
+  <div class="block1">
+    <div class="main-block">
+      <!--alvayang -->
+      <p>你的同事 雷军 邀请你加入：</p>
+      <h1>北京大米科技有限公司</h1>
+      <p class="step2">登录「云报销」</p>
+      <form class="step2" onsubmit="return check()">
+        <div class="form-name">
+          <input id="name" name="name" style="color:grey" value="手机或邮箱" type="text" onfocus="this.value='';this.style.color = 'black'" onblur="if(this.value == ''){this.value = '手机或邮箱';this.style.color = 'grey'}">
+        </div>
+        <div class="form-password">
+          <input id="password" name="password" style="color:grey" value="密码" type="text" onfocus="this.value='';this.style.color = 'black'" onblur="if(this.value == ''){this.value = '密码';this.style.color = 'grey'}">
+        </div>
+        <p id="error">请输入姓名</p>
+        <input type="submit" value="确认加入" onclick="if($('#name').val() == '手机或邮箱'){$('#name').val('');};if($('#password').val() == '密码'){$('#password').val('');}">
+        <div class="form-weixin"><a>微信登陆</a></div>
+      </form>
+      <div id="two-button">
+        <div onclick="$('#two-button').css('display','none');$('.step2').css('display','block');">已有「云报销」账号</div>
+        <div>使用微信账号授权</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="main-block">
+      <div class="copyright">
+        <p class="footer-text">© 2014-2015 如数科技有限公司 / All Rights Reserved</p>
+      </div>
+      <div class="footer-link">
+        <ul>
+        <li><a href="https://cloudbaoxiao.com/contact.html">关于我们</a></li>
+        <li><a href="https://cloudbaoxiao.com/help.html">帮助中心</a></li>
+        <li><a href="https://cloudbaoxiao.com/joinus.html">加入我们</a></li>
+      </ul>
+      </div>
+      <div class="record">
+      <p class="footer-text">京ICP备 14046885号-2</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
